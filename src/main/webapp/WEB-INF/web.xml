@@ -15,7 +15,14 @@
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>com.ZhengMengen.week3.RegisterServlet</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.ZhengMengen.week5.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
     <context-param>
         <param-name>driver</param-name>
         <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
@@ -32,7 +39,6 @@
         <param-name>password</param-name>
         <param-value>123456789</param-value>
     </context-param>
-
     <!--<servlet>
         <servlet-name>ConfigDemoServlet</servlet-name>
         <servlet-class>com.ZhengMengen.week4.ConfigDemoServlet</servlet-class>
@@ -44,7 +50,11 @@
             <param-name>studentId</param-name>
             <param-value>2019211001000707</param-value>
         </init-param>
-    </servlet>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>-->
     <servlet-mapping>
         <servlet-name>HelloWorldServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
@@ -57,8 +67,4 @@
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
-    <!--<servlet-mapping>
-        <servlet-name>ConfigDemoServlet1</servlet-name>
-        <url-pattern>/config1</url-pattern>
-    </servlet-mapping>-->
 </web-app>
