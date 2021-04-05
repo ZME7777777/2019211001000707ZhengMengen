@@ -41,22 +41,21 @@ public class LoginServlet extends HttpServlet {
         out.println("<html>");
         out.println("<head><title>Login</title></head>");
         out.println("<body>");
-        String sql2="select * from usertable";
-        ResultSet rs= null;
+        String sql="select * from Usertable where username=? and password=?";
+        PreparedStatement pstmt= null;
         try {
-            rs = con.createStatement().executeQuery(sql2);
-            while(rs.next()){
-                String username1=rs.getString("username");
-                String password1=rs.getString("password");
-                if(username.equals(username1) && password1.equals(password))
-                {
-                    out.println("<b>"+"Login Success!!!"+"<br>");
-                    out.println("<b>"+"Welcome,"+"<b>" + "<b>"+username+"<b>");
-                }
-                }
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1,username);
+            pstmt.setString(2,password);
+            ResultSet rs= pstmt.executeQuery();
+            if(rs.next()){
+                out.println("Login Success!!!");
+                out.println("Welcome,"+username);
+            }else out.println("Login Error!!!");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+
         out.println("</body>");
         out.println("</html>");
     }
