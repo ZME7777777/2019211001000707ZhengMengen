@@ -8,6 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="header.jsp"%>
 <b>Login</b><br>
+<%
+    if(!(request.getAttribute("message")==null)){
+        out.println(request.getAttribute("message"));
+    }
+%>
 <form method="post" action="login">
     Username: <input type="text" name="username"><br>
     Password: <input type="password" name="password"><br>
