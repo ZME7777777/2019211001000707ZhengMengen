@@ -10,8 +10,7 @@ public class SearchServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String txt = request.getParameter("txt");
         String search = request.getParameter("search");
-        if(txt.equals(null)){
-            System.out.println("txt");
+        if(txt == ""){
             response.sendRedirect("index.jsp");
         }else {
             if(search.equals("baidu")){
