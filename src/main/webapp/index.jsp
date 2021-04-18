@@ -11,4 +11,5 @@
     </select>
     <input type="submit"value="Search">
 </form>
+<a href="hello-servlet">hello servlet</a>
 <%@include file="footer.jsp"%>
