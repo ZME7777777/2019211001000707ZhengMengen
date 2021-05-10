@@ -12,7 +12,7 @@ public class LogoutServlet extends HttpServlet {
 
         request.getSession(false).invalidate();
         request.setAttribute("message","you have successfully logged out.");
-        request.getRequestDispatcher("WEB-INF/views/login.jsp").forward(request,response);
+        request.getRequestDispatcher("login").forward(request,response);
     }
 
     @Override
