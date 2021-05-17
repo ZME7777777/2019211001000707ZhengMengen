@@ -31,6 +31,7 @@
 										<option >-- Category --</option>
 											<!-- loop_start -->
 											
+<<<<<<< HEAD
 										<option value="1"></option>
 									<option value="8">FASHION</option>
 									<option value="9">HOUSEHOLD</option>
@@ -40,6 +41,9 @@
 									<option value="13">FASHION</option>
 									<option value="14">BOOKS</option>
 									<option value="15">OTHER</option>
+=======
+										<option value=""></option>
+>>>>>>> origin/master
 										
 										<!-- loop_end -->
 										
