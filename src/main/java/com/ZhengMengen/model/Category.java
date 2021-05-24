@@ -87,7 +87,7 @@ public class Category {
 
     public static String findByCategoryId(Connection con,int categoryId){
         String categoryName = null;
-        String sql = "select * form Category where categoryId=?";
+        String sql = "select * from Category where CategoryId=?";
         try {
             PreparedStatement pt = con.prepareStatement(sql);
             pt.setInt(1,categoryId);
