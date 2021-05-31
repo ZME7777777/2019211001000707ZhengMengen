@@ -18,9 +18,9 @@
 				<h2>Modules</h2>
 				<ul class="nav nav-pills nav-stacked">
 					<li><a href="<%=basePath%>admin/home">Home</a></li>
-					<li><a href="<%=basePath%>admin/productList.jsp">Product</a></li>
+					<li><a href="<%=basePath%>admin/productList">Product</a></li>
 					<li><a href="<%=basePath%>admin/orderList.jsp">Order</a></li>
-					<li><a href="<%=basePath%>admin/userList.jsp">User</a></li>
+					<li><a href="<%=basePath%>admin/userList">User</a></li>
 				</ul>
 			</div>
 		</div>
@@ -64,8 +64,9 @@
 						int pid = p.getCategoryId();
 						java.sql.Connection con = (java.sql.Connection)application.getAttribute("con");
 						String catName = Category.findByCategoryId(con,pid);
+						System.out.println(catName);
 					%>
-					<td class="cart_quantity"><%=catName%>></td>
+					<td class="cart_quantity"><%=catName%></td>
 
 					<td class="cart_total">
 						<p class="cart_total_price"> ${p.productDescription}</p>
