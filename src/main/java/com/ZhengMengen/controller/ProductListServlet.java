@@ -26,6 +26,10 @@ public class ProductListServlet extends HttpServlet {
         try {
             List<Product> productList = productDao.findAll(con);
             request.setAttribute("productList",productList);
+            for (Product p:productList
+                 ) {
+                System.out.println(p);
+            }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
