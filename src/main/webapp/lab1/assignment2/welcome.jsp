@@ -13,7 +13,8 @@
 </head>
 <body>
 <h2>Welcome,<%-- todo 8 use c:out to print username from parammeter --%>
-<%=//request.getParameter("username")%>
+    <c:out value="${param.username}"></c:out>
+    <%--<%=//request.getParameter("username")%>--%>
 </h2>
 </body>
 </html>
