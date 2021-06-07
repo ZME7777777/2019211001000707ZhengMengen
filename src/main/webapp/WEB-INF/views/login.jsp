@@ -30,7 +30,6 @@
     }
     //update 5 user basepath
 %>
-<%System.out.println("------->>>>>>>"+request.getContextPath());%>
 <form method="post" action="<%=request.getContextPath()+"/login"%>">
     <input type="text" name="username" placeholder="Username" value="<%=username%>"><br>
    <input type="password" name="password" placeholder="password" value="<%=password%>">
