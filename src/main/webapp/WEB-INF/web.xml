@@ -110,4 +110,17 @@
         <filter-name>AuthFilter</filter-name>
         <url-pattern>/hello</url-pattern>
     </filter-mapping>
+
+    <filter>
+        <filter-name>YourNameFilter</filter-name>
+        <filter-class>com.ZhengMengen.lab2.YourNameFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>YourNameFilter</filter-name>
+        <url-pattern>/lab2/welcome.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>YourNameFilter</filter-name>
+        <url-pattern>/lab2/validate.jsp</url-pattern>
+    </filter-mapping>
 </web-app>

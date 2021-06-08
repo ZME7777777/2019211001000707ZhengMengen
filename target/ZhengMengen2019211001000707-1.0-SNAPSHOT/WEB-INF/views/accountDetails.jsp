@@ -64,7 +64,7 @@
 						<tr>
 						<td>OID:${o.orderId}</td>
 						<td>${o.orderDate}</td>
-						<td><p${o.firstName} ${o.lastName}</p>
+						<td><${o.firstName} ${o.lastName}</p>
 						<p> ${o.address1}</p>
 						<p>${o.address2}</p>
 						<p>${o.city},${o.state},${o.country}-${o.postalCode}</p>

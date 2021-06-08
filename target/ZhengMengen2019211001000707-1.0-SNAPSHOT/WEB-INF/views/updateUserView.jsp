@@ -1,4 +1,4 @@
-<%@ page import="com.dabing.model.User" %>
+<%@ page import="com.ZhengMengen.model.User" %>
 <%@ page import="java.util.List" %>
  
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,7 +11,7 @@
 						<h2>Update User Info</h2>
 <% if(!(request.getAttribute("user")==null)){
     
-   com.dabing.model.User u = (com.dabing.model.User)request.getAttribute("user");
+   com.ZhengMengen.model.User u = (com.ZhengMengen.model.User)request.getAttribute("user");
 %>
 <%if(!(request.getAttribute("message")==null)){
     out.println("<h3>"+request.getAttribute("message")+"</h3>");
