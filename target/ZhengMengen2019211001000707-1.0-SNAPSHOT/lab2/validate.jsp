@@ -22,17 +22,17 @@
     if(request.getParameter("username").equals("admin") && request.getParameter("password").equals("admin")){
 %>
 <%--todo 4: use jsp:forward to welcome.jsp page--%>
-<jsp:forward page="welcome.jsp"></jsp:forward>
+    <jsp:forward page="welcome.jsp"></jsp:forward>
 <%--todo 5: else part{ --%>
 <%
-}else{
+    }else{
 %>
 <%
     // todo 6: print username or password error message
     out.print("username or password error message");
 %>
 <%--todo 7: use jsp:include login.jsp page --%>
-<jsp:include page="login.jsp" flush="true"></jsp:include>
+    <jsp:include page="login.jsp" flush="true"></jsp:include>
 <%--todo 8: close else --%>
 <%
     }
